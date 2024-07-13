@@ -8,6 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+typed-data-structures = "^0.0.2"
 
 
 [build-system]

@@ -18,8 +18,8 @@ def loop() -> Loop[Any]:
 def run(generator: Generator[Any, Any, T]) -> T:
     global _loop
     assert _loop is None, "Loop is already running"
-    _loop = Loop(generator)
-    result = _loop.run()
+    _loop = Loop()
+    result = _loop.run(generator)
     _loop = None
     return result
 
